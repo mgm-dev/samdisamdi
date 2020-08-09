@@ -1,0 +1,176 @@
+/* set default */
+body{
+    background-color: white;
+    color: black;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+/*container to make responsive*/
+.container{
+    min-width: 500px;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+/*header includes nav bar*/
+#main-header{
+    background: rgba(255, 255, 255, 0.9);
+    color: #6C63FF;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+#main-header h1{
+    font-size: 24px;
+    float: left;
+}
+
+#main-header ul{
+    list-style: none;
+    float: right;
+}
+
+#main-header li{
+    display: inline;
+    padding-left: 10px;
+}
+
+#main-header a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#main-header a:hover{
+    color: darkgrey;
+}
+
+/*intro section */
+#introduction{
+    margin-top: 50px;
+}
+
+#intro-text{
+    float: left;
+    width: 50%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#intro-text img{
+    width: 100%;
+}
+
+#intro-image{
+    float: right;
+    width: 50%;
+    padding: 0 30px;
+    box-sizing: border-box;
+
+}
+
+#intro-image img{
+    width: 100%;
+}
+
+/*image slider to show ad*/
+#slider, .wrap, .slide-content{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica;
+    width: 100%;
+    height: 20vh;
+    overflow-x:hidden;
+}
+
+.wrap{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.slide{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content span{
+    font-size: 3rem;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.slide-content a{
+    text-decoration: none;
+    color: white;
+}
+
+.slide1{background-image: url("../images/printer3.jpg")}
+.slide2{background-image: url("../images/printer1.jpg")}
+.slide3{background-image: url("../images/printer2.jpg")}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left{
+    border-width: 20px 20px 20px 0;
+    border-color:  transparent #fff transparent transparent;
+    left:0;
+    margin-left: 30px;
+}
+
+#arrow-right{
+    border-width: 20px 0 20px 20px;
+    border-color:  transparent transparent transparent #fff;
+    right:0;
+    margin-right: 30px;
+}
+
+/*footer section*/
+#main-footer{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.text-hover-underline {
+    cursor: pointer;
+}
+
+.text-hover-underline span:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 800px){
+    #intro-text{
+        width: 100%;
+        float: none;
+    }
+    #intro-image{
+        width: 100%;
+        float: none;
+    }
+}

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Viewstl Javascript Plugin - User file</title>
+</head>
+
+<style>
+    body {text-align:center;}
+</style>
+
+<script>
+    function load_prog(load_status, load_session)
+    {
+        var loaded=0;
+        var total=0;
+
+        //go over all models that are/were loaded
+        Object.keys(load_status).forEach(function(model_id)
+        {
+            if (load_status[model_id].load_session==load_session) //need to make sure we're on the last loading session (not counting previous loaded models)
+            {
+                loaded+=load_status[model_id].loaded;
+                total+=load_status[model_id].total;
+
+                //set the relevant model's progress bar
+                document.getElementById("pb"+model_id).value=load_status[model_id].loaded/load_status[model_id].total;
+            }
+        });
+
+        //set total progress bar
+        document.getElementById("pbtotal").value=loaded/total;
+    }
+
+    function load_end() {
+        document.getElementById('loading_tag').innerText = 'loaded!';
+    }
+</script>
+
+<body>
+<h5 id="loading_tag">loading...</h5>
+<div id="stl_cont" style="width:500px;height:500px;margin:0 auto;">loading</div>
+
+<script src="https://www.samdisamdi.com/stl_plugin/stl_viewer.min.js"></script>
+
+<script>
+    var stl_viewer=new StlViewer ( document.getElementById("stl_cont"),
+        {
+            all_loaded_callback : load_end,
+            loading_progress_callback : load_prog,
+            cameray : -50
+        }
+    );
+</script>
+
+<input type="file" onchange='stl_viewer.add_model({id:1, local_file:this.files[0]});' accept="*.*">
+
+<progress id="pb1" value="0" max="1"></progress>
+
+
+</body>
+</html>

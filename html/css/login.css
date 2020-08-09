@@ -1,0 +1,201 @@
+/* set default */
+html {
+    height: 100%;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right, mediumpurple, lightblue);
+}
+
+body{
+    color: black;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+/*container to make responsive*/
+.container{
+    min-width: 500px;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+/*header includes nav bar*/
+#main-header{
+    background: rgba(255, 255, 255, 0.9);
+    color: #6C63FF;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+#main-header h1{
+    font-size: 24px;
+    float: left;
+}
+
+#main-header ul{
+    list-style: none;
+    float: right;
+}
+
+#main-header li{
+    display: inline;
+    padding-left: 10px;
+}
+
+#main-header a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#main-header a:hover{
+    color: darkgrey;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 100px;
+}
+
+.center img{
+    height: 600px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+#my-form {
+    padding-right: 2em;
+    width: 400px;
+    background: #fff;
+    height: 600px;
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#my-form h1 {
+    padding-top: 50px;
+}
+
+#my-form label {
+    display: block;
+}
+
+#my-form input[type='text'] {
+    font-size: 1.2em;
+    width: 96%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#my-form input[type='email'] {
+    font-size: 1.2em;
+    width: 96%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#my-form input[type='password'] {
+    font-size: 1.2em;
+    width: 96%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    background: #7aee7a;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background: #b7eab7;
+}
+
+.btn-dark {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    background: darkgray;
+    text-decoration: none;
+}
+
+.btn-dark:hover {
+    background: lightgrey;
+}
+
+.btn-light {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    background: lightgray;
+    text-decoration: none;
+}
+
+.btn-light:hover {
+    background: #e0e0e0;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.error {
+    background: orangered;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+@media(max-width: 1000px){
+    .center img{
+        height: 0px;
+    }
+
+    #my-form {
+        padding-right: 2em;
+        padding-left: 2em;
+        width: 600px;
+        background: #fff;
+        height: 600px;
+
+        border-radius: 15px;
+    }
+}
+
+.alert-success {
+    padding: 5px;
+    border-radius: 5px;
+    border: lightgreen 1px solid;
+    color: green;
+}
+
+.alert-danger {
+    padding: 5px;
+    border-radius: 5px;
+    border: lightcoral 1px solid;
+    color: darkred;
+}

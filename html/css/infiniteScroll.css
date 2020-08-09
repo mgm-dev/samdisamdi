@@ -1,0 +1,122 @@
+body{
+    color: black;
+    font-family: Arial;
+    font-size: 16px;
+    margin: 0;
+}
+html {
+    height: 100%;
+    background-attachment: fixed;
+    background-color: #f1f1f1;
+}
+
+
+/*container to make responsive*/
+.my-container{
+    line-height: 1.6em;
+    min-width: 500px;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+/*header includes nav bar*/
+#my-main-header{
+    height: 58px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #6C63FF;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+#my-main-header h1{
+    font-weight: bold;
+    font-size: 24px;
+    float: left;
+}
+
+#my-main-header ul{
+    list-style: none;
+    float: right;
+}
+
+#my-main-header li{
+    display: inline;
+    padding-left: 10px;
+}
+
+#my-main-header a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#my-main-header a:hover{
+    color: darkgrey;
+}
+
+
+.outer-box {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+}
+.inner-box {
+    width: 80%;
+    background-color: white;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: solid 1px lightgray;
+}
+.top-margin {
+    padding-top: 78px;
+    background-color: lightgray;
+}
+
+.img-box {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.content-box {
+    padding-top: 10px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    width: 77%;
+    float: right;
+}
+
+.img-thumbnail {
+    width: 100%;
+    height: 100%;
+}
+
+.preview-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.title-text {
+    margin-bottom: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.content-box a {
+    font-size: 1.25em;
+    text-decoration: none;
+    color: black;
+}
+
+.content-box a:hover {
+    color: darkgray;
+}

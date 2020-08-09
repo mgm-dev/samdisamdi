@@ -1,0 +1,79 @@
+/* set default */
+body{
+    color: black;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+/*container to make responsive*/
+.my-container{
+    min-width: 500px;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    z-index: 9999 !important;
+}
+
+/*header includes nav bar*/
+#my-main-header{
+    height: 58px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #6C63FF;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+#my-main-header h1{
+    font-weight: bold;
+    font-size: 24px;
+    float: left;
+    padding-top: 15px;
+}
+
+#my-main-header ul{
+    list-style: none;
+    float: right;
+    padding-top: 16px;
+}
+
+#my-main-header li{
+    display: inline;
+    padding-left: 10px;
+}
+
+#my-main-header a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#my-main-header a:hover{
+    color: darkgrey;
+}
+
+.table{
+    text-align: center;
+}
+
+.table td,
+.table th{
+    white-space: nowrap;
+    width: 1%;
+}
+
+#my-link-div {
+    cursor: pointer;
+}
+
+#my-hyperlink a:link {
+    text-decoration: none;
+    color: black;
+}
+
+#my-hyperlink a:visited {
+    color: lightgrey;
+}

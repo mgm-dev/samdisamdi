@@ -1,0 +1,82 @@
+/* set default */
+html{
+    height: 100%;
+}
+
+body{
+    color: black;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+
+    padding-top: 70px;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right, mediumpurple, lightskyblue);
+}
+
+/*container to make responsive*/
+.my-container{
+    min-width: 500px;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+/*header includes nav bar*/
+#my-main-header{
+    height: 58px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #6C63FF;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+#my-main-header h1{
+    font-weight: bold;
+    font-size: 24px;
+    float: left;
+    padding-top: 15px;
+}
+
+#my-main-header ul{
+    list-style: none;
+    float: right;
+    padding-top: 16px;
+}
+
+#my-main-header li{
+    display: inline;
+    padding-left: 10px;
+}
+
+#my-main-header a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#my-main-header a:hover{
+    color: darkgrey;
+}
+
+.container {
+    margin-bottom: 50px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container h1{
+    font-weight:bold;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+#bContent {
+    height: 50vh;
+    resize: none;
+}

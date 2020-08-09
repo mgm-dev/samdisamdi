@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>/</loc>
+  <lastmod>2020-05-15T07:00:57+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>/mypage.php</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>/forum.php</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>/signup.php</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>/login_process.php</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>/view.php?bno=6</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>/view.php?bno=5</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>/view.php?bno=4</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>/view.php?bno=3</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>/view.php?bno=2</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>/view.php?bno=1</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>/write.php</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>/forum.php?page=1&amp;search-type=&amp;search=</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>/forum.php?page=0&amp;search-type=&amp;search=</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>/forum.php?page=2&amp;search-type=&amp;search=</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>/delete.php?bno=6</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>/delete.php?bno=5</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>/delete.php?bno=4</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>/delete.php?bno=3</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>/delete.php?bno=2</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>/delete.php?bno=1</loc>
+  <lastmod>2020-05-17T09:28:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

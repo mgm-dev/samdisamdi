@@ -1,0 +1,134 @@
+/* set default */
+body{
+    color: black;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+/*container to make responsive*/
+.my-container{
+    min-width: 500px;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+/*header includes nav bar*/
+#my-main-header{
+    height: 58px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #6C63FF;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+#my-main-header h1{
+    font-weight: bold;
+    font-size: 24px;
+    float: left;
+    padding-top: 15px;
+}
+
+#my-main-header ul{
+    list-style: none;
+    float: right;
+    padding-top: 16px;
+}
+
+#my-main-header li{
+    display: inline;
+    padding-left: 10px;
+}
+
+#my-main-header a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#my-main-header a:hover{
+    color: darkgrey;
+}
+
+.container img {
+    width: 100%;
+}
+
+#my-main-post {
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.my-word-break {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#my-sidebar {
+    float: right;
+    width: 30%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+#my-search-bar {
+    border: lightgrey solid 1px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px
+}
+
+#my-search-bar input {
+    width: 70%;
+}
+
+#my-button-box {
+    border: lightgrey solid 1px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+#my-side-box {
+    border: lightgrey solid 1px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.my-comment-box {
+    width: 100%;
+    border: lightgrey solid 1px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.swal2-container {
+    zoom: 1.5;
+}
+
+h1 {
+    word-break: break-all;
+}
+
+@media (max-width: 1200px) {
+    #my-main-post {
+        float: none;
+        width: 100%;
+    }
+
+    #my-sidebar {
+        float: none;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+

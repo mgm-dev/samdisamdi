@@ -1,0 +1,41 @@
+.icon-image{
+    width: 100px;
+    height: 100px;
+}
+
+.parent{
+    padding-top: 10px;
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+}
+
+.first {
+    flex: 1;
+    width: 30%;
+}
+
+.second {
+    flex: 1;
+    width: 30%;
+}
+
+.third {
+    flex: 1;
+    width: 30%;
+}
+
+#mypage-icon-box {
+    width: 100%;
+    margin-top: 150px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: white;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}

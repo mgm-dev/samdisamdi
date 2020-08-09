@@ -1,0 +1,119 @@
+<!-- client.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+    <style>
+        .chat_log{ width: 95%; height: 180px; }
+        .name{ width: 10%; }
+        .message{ width: 70%; }
+        .chat{ width: 10%; }
+
+        .select-room{ margin: 2px; padding: 1px;}
+    </style>
+</head>
+<body>
+<select class="select-room">
+    <option value="Room1">자유 토론</option>
+    <option value="Room2">프린터 팁 공유</option>
+</select>
+
+<div>
+    <textarea id="chatLog" class="chat_log" readonly></textarea>
+</div>
+<form id="chat">
+    <input id="name" class="name" type="text" readonly>
+    <input id="message" class="message" type="text">
+    <input type="submit" class="chat" value="chat"/>
+</form>
+<div id="box" class="box"></div>
+    <script src="/socket.io/socket.io.js"></script> <!-- 1 -->
+    <script src="//code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+        let name;
+
+        function createNickName() {
+            name = prompt('이름을 입력하세요')
+            name = name.replace(" ", "");
+            if(name === null || name === '') {
+                alert('이름을 입력하세요')
+                createNickName();
+            }
+            else {
+                $('#name').val(name);
+                alert('당신의 이름은 ' + name + '입니다');
+                socket.emit('create nick name', name);
+            }
+        }
+
+        let socket = io.connect('https://www.samdisamdi.com:6848', {reconnection : false}); //1
+        let roomNum = 0;
+
+
+        $('select').change(function () {
+            socket.emit('leaveRoom', roomNum, name);
+            roomNum++;
+            roomNum = roomNum % 2;
+            socket.emit('joinRoom', roomNum, name);
+        });
+
+        $('#chat').submit(function () {
+            socket.emit('chat message', roomNum, name, $('#message').val());
+            $('#message').val('');
+            return false;
+        });
+
+        socket.on('connect', function () {
+            createNickName();
+        });
+
+        socket.on('name confirm', function () {
+            socket.emit('joinRoom', roomNum, name);
+        });
+
+        socket.on('force change name', function () {
+            alert('이름이 이미 사용 중입니다');
+            createNickName();
+        });
+
+        socket.on('chat message', function (name, msg) {
+            $('#chatLog').append(name + ' : ' + msg + '\n');
+            $('#chatLog').scrollTop($('#chatLog')[0].scrollHeight);
+        });
+
+        //귓속말 이벤트 리스너
+        socket.on('hidden message', function (msg) {
+            $('#chatLog').append(msg + '\n');
+            $('#chatLog').scrollTop($('#chatLog')[0].scrollHeight);
+        })
+
+        socket.on('leaveRoom', function (roomNum, name) {
+            let roomName;
+            if(roomNum === 0) {
+                roomName = '자유토론'
+            }
+            else {
+                roomName = '프린터 팁  공유'
+            }
+            $('#chatLog').append('** ' + roomName + ' - 유저 퇴장 : ' + name + ' **\n');
+        });
+
+        socket.on('joinRoom', function (roomNum, name) {
+            let roomName;
+            if(roomNum === 0) {
+                roomName = '자유토론'
+            }
+            else {
+                roomName = '프린터 팁  공유'
+            }
+            $('#chatLog').append('** ' + roomName + ' - 유저 입장 : ' + name + ' **\n');
+        });
+
+        socket.on('user disconnect', function (userName) {
+            $('#chatLog').append('** 전체 채팅 - 유저 퇴장 : ' + userName + ' **\n');
+        })
+    </script>
+</body>
+</html>
